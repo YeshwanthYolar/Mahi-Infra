@@ -1,0 +1,288 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centered logo & title */
+    background-color: #f9e79f;
+    padding: 20px;
+}
+
+header img {
+    height: 100px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #fcf3cf;
+    padding: 15px;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Styling */
+section {
+    margin: 20px auto;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Service List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Service Item (Main List) */
+.service-item {
+    cursor: pointer;
+    background: #fcf3cf;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-item:hover {
+    background-color: #f7dc6f;
+}
+
+/* Toggle Icon */
+.toggle-icon {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Dropdown Sublist */
+.dropdown-content {
+    display: none; /* Hide initially */
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    background: #fff7d6;
+    border-radius: 5px;
+    text-align: justify;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Show when active */
+.dropdown-content.active {
+    display: block;
+}
+
+/* Sublist Items */
+.dropdown-content li {
+    padding: 8px 0;
+    font-size: 18px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* Indent sublist bullets */
+.dropdown-content li::marker {
+    color: #b7950b;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #f9e79f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f7dc6f;
+}
+
+
+ /* this is the block starting for adaptability of the website on devices*/
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+
+    .service-item {
+        font-size: 18px;
+    }
+
+    .dropdown-content li {
+        font-size: 16px;
+    }
+}
+
+ /* the above block ends here*/
+
+/* this contact button is on service page  */
+.contact-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: #e68900;
+}
+/* this contact button is on service page ends  */
+
+/* features section connected on home page  */
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: #fcf3cf;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background: #fff7d6;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+.feature-box h3 {
+    font-size: 22px;
+    color: #b7950b;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+}
+/* features section connected on home page  ends */
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #f9e79f;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-weight: bold;
+}

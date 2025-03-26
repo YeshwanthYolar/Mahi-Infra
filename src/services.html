@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAHI INFRA - Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="global.css">
+
 </head>
 <body>
     <header>
@@ -24,16 +25,105 @@
     <section class="container">
         <h2>Our Services</h2>
         <ul>
-            <li>Residential Construction</li>
-            <li>Commercial Building Development</li>
-            <li>Architectural Planning</li>
-            <li>Interior Design</li>
-            <li>Renovation & Remodeling</li>
+            <li class="service-item" onclick="toggleDropdown('design')">
+                Design <span class="toggle-icon">+</span>
+            </li>
+            <ul id="design" class="dropdown-content">
+                <li>SCHEME DRAWING : ALL FLOORS (2D)</li>
+                <li>ELEVATION DESIGN : (3D)</li>
+            </ul>
+
+            <li class="service-item" onclick="toggleDropdown('project-management')">
+                Project Management <span class="toggle-icon">+</span>
+            </li>
+            <ul id="project-management" class="dropdown-content">
+                <li>Site Engineer : One Visit Per Day</li>
+                <li>Project Manager : Visit site Once in a Week</li>
+                <li>Android/IOS App : Access to APP for Site Status update</li>
+            </ul>
+
+            <li class="service-item" onclick="toggleDropdown('structure')">
+                Structure <span class="toggle-icon">+</span>
+            </li>
+            <ul id="structure" class="dropdown-content">
+                <li>Basement Height : Upto 2 feet</li>
+                <li>Steel : Any ISI Brand</li>
+                <li>AAC : For Partition walls. 8-Inch Thick Exterior Walls | 4 Inch Thick Inner Walls</li>
+                <li>Cement : Penna / Priya</li>
+                <li>M Sand : Blockwork & All Masonry Works</li>
+                <li>P Sand : Plastering Works</li>
+                <li>Concrete Grade : M20 (Manual Mix)</li>
+                <li>Ceiling Height : 10 Feet</li>
+                <li>Steel Reinforcement : As per Standard</li>
+                <li>Parapet Wall : 3 Feet Height | 4" Thick (Only for Floor with Headroom)</li>
+            </ul>
+
+            <li class="service-item" onclick="toggleDropdown('bathroom')">
+                Bathroom & Plumbing <span class="toggle-icon">+</span>
+            </li>
+            <ul id="bathroom" class="dropdown-content">
+                <li>Wall Tiles : Upto 7' Height. Size 2'X1' Vitrified Tile. Upto ₹40/Sqft</li>
+                <li>Bath & CP Fittings : Cera | Upto ₹12000 Per Bathroom</li>
+                <li>Plumbing Pipes & Fittings : Inner CPVC, Outer PVC</li>
+                <li>Overhead Tank : 1000 litres Sintex | 3 Layered | UV Protected | White Colour</li>
+            </ul>
+
+            <li class="service-item" onclick="toggleDropdown('flooring')">
+                Flooring <span class="toggle-icon">+</span>
+            </li>
+            <ul id="flooring" class="dropdown-content">
+                <li>Living, Dining, Bedrooms & Kitchen : 2'X2' | Vitrified Tiles Upto ₹45/Sqft</li>
+                <li>Balcony & Utility : Size 1'X1' | Upto 35/Sqft</li>
+                <li>Staircase : Size 1'X1' Tile : Upto ₹35/sqft</li>
+                <li>Car Parking : 1'X1' Parking Tile | Upto ₹35/Sqft</li>
+                <li>Terrace Flooring : Screed Concreting with Waterproofing</li>
+            </ul>
+
+            <li class="service-item" onclick="toggleDropdown('painting')">
+                Painting <span class="toggle-icon">+</span>
+            </li>
+            <ul id="painting" class="dropdown-content">
+                <li>Inner Wall Putty : 2 coats of Wall Putty</li>
+                <li>Wall Painting : 1 coat of Primer | 2 coats of Tractor emulsion</li>
+                <li>Ceiling Painting : 1 coat of Primer | 2 coats of Tractor emulsion</li>
+                <li>Exterior Paint : 1 coat of Primer | 2 Coats of Ace</li>
+            </ul>
+
+            <li class="service-item" onclick="toggleDropdown('electrical')">
+                Electrical <span class="toggle-icon">+</span>
+            </li>
+            <ul id="electrical" class="dropdown-content">
+                <li>Wires – Essar</li>
+                <li>Switches – Fybros</li>
+                <li>AC Points : 1 for Each Bedroom</li>
+                <li>Living Room : Upto 4 Switch Box (8 Module)</li>
+                <li>Kitchen : 3 Switch Box (6 Module). Point for HOB, Chimney, RO</li>
+                <li>Balconies : 1 Switch Box (3-Module)</li>
+            </ul>
+
+            <li class="service-item" onclick="toggleDropdown('not-included')">
+                What's Not Included <span class="toggle-icon">+</span>
+            </li>
+            <ul id="not-included" class="dropdown-content">
+                <li>Compound Wall @ 425/Sqtft & Gate</li>
+                <li>Sump & Septic Tank @ 24/Litre</li>
+                <li>Lift, Lift Pit and Shaft</li>
+                <li>Electricity Connection</li>
+                <li>Building Plan Approval</li>
+                <li>Elevation Special Materials</li>
+            </ul>
         </ul>
+
+        <!-- Contact Us Button -->
+        <div class="contact-button-container">
+            <a href="contact.html" class="contact-button">Contact Us</a>
+        </div>
     </section>
     
     <footer>
         &copy; 2025 MAHI INFRA. All rights reserved.
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
