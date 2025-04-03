@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: open sans  , sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
@@ -29,6 +29,29 @@ header h1 {
     white-space: nowrap;
 }
 
+/* these are for styling of the paragraphs and header parts */
+.container h1 {
+    font-family: 'open sans ', sans-serif; /* Custom Font */
+    font-size: 42px; /* Adjust the size */
+    font-weight: 700; /* Bold */
+    color: #b7950b; /* Gold color (change as needed) */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-family: 'open sans  ', sans-serif; /* Custom Font */
+    font-size: 18px; /* Adjust the size */
+    font-weight: 400;
+    color: #333; /* Dark text */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* styling of header and para ends here */
+
+
 /* Navigation Bar */
 nav {
     display: flex;
@@ -39,13 +62,78 @@ nav {
     white-space: nowrap;
 }
 
-nav a {
+/* Default Navigation (For Larger Screens) */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #fcf3cf;
+    padding: 15px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
     margin: 0 15px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
 }
+
+/* Menu Icon (Hamburger Button for Mobile) */
+.menu-icon {
+    display: none; /* Hide by default */
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Mobile View (Max 768px) */
+@media (max-width: 768px) { 
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: block; /* Show on small screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide links initially */
+        flex-direction: column;
+        width: 100%;
+        background: #fcf3cf;
+        padding: 10px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+
+    /* Show menu when active */
+    .nav-links.active {
+        display: flex;
+    }
+}
+/* Menu Icon (Hamburger Button for Mobile) till here*/
+
+
 
 /* Main Container */
 .container {
@@ -62,7 +150,7 @@ section {
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(10, 8, 8, 0.472);
 }
 
 /* Service List */
