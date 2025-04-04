@@ -31,7 +31,7 @@ header h1 {
 
 /* these are for styling of the paragraphs and header parts */
 .container h1 {
-    font-family: 'open sans ', sans-serif; /* Custom Font */
+    font-family: "Montserrat", sans-serif; /* Custom Font */
     font-size: 42px; /* Adjust the size */
     font-weight: 700; /* Bold */
     color: #b7950b; /* Gold color (change as needed) */
@@ -40,14 +40,30 @@ header h1 {
 }
 
 .container p {
-    font-family: 'open sans  ', sans-serif; /* Custom Font */
+    font-family: "open sans", sans-serif; /* Custom Font */
     font-size: 18px; /* Adjust the size */
     font-weight: 400;
     color: #333; /* Dark text */
     line-height: 1.6;
     text-align: justify;
 }
+/* Main Container */
+.container {
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+/* Section Styling welcome part*/
+section {
+    margin: 20px auto;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(10, 8, 8, 0.472);
+}
 
 /* styling of header and para ends here */
 
@@ -66,7 +82,7 @@ nav {
 nav {
     display: flex;
     justify-content: center;
-    background: #fcf3cf;
+    background: #cbcac8;
     padding: 15px;
     flex-wrap: wrap;
     position: relative;
@@ -81,8 +97,9 @@ nav {
     margin: 0 15px;
     text-decoration: none;
     color: #333;
+    font-family: "open sans" , sans-serif ;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 /* Menu Icon (Hamburger Button for Mobile) */
@@ -135,23 +152,7 @@ nav {
 
 
 
-/* Main Container */
-.container {
-    padding: 20px;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-/* Section Styling */
-section {
-    margin: 20px auto;
-    width: 100%;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(10, 8, 8, 0.472);
-}
 
 /* Service List */
 ul {
@@ -316,7 +317,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    background: #fcf3cf;
+    background: #cbcac8;
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -325,9 +326,9 @@ button:hover {
 
 .feature-box {
     flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    background: #fff7d6;
+    min-width: 400px;
+    max-width: 200px;
+    background: #f8efd4;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
@@ -340,15 +341,17 @@ button:hover {
 }
 
 .feature-box h3 {
-    font-size: 22px;
+    font-size: 23px;
+    font-family: "Montserrat", sans-serif;
     color: #b7950b;
     margin-bottom: 10px;
 }
 
 .feature-box p {
     font-size: 16px;
+    font-family: "open sans" , sans-serif;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* Responsive Design */
