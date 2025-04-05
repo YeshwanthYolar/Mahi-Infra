@@ -12,18 +12,19 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centered logo & title */
+    /* justify-content: center; Centered logo & title */
     background-color: #f9e79f;
-    padding: 20px;
+    padding: 1px;
 }
 
 header img {
-    height: 100px;
+    height: 200px;
     margin-right: 15px;
 }
 
 header h1 {
     font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
     font-weight: bold;
     margin: 0;
     white-space: nowrap;
@@ -67,6 +68,33 @@ section {
 
 /* styling of header and para ends here */
 
+/* the styling for aboutus starts here */
+.aboutus h2 {
+    font-family: "Montserrat", sans-serif; /* Custom Font */
+    font-size: 42px; /* Adjust the size */
+    font-weight: 700; /* Bold */
+    color: #b7950b; /* Gold color (change as needed) */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.aboutus p {
+    font-family: "open sans", sans-serif; /* Custom Font */
+    font-size: 18px; /* Adjust the size */
+    font-weight: 400;
+    color: #333; /* Dark text */
+    line-height: 1.6;
+    text-align: justify;
+}
+/* Main Container */
+.aboutus {
+    padding: 20px;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* the styling for aboutus starts here */
 
 /* Navigation Bar */
 nav {
