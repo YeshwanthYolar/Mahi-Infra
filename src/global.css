@@ -1,12 +1,22 @@
 /* General Styles */
 body {
     font-family: open sans  , sans-serif;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: #f8f9fa;
     color: #333;
     overflow-x: hidden;
 }
+/* Section Styling welcome part*/
+section {
+    margin: 20px auto;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(10, 8, 8, 0.472);
+}
+/* styling of header and para ends here */
 
 /* Header Styling */
 header {
@@ -41,7 +51,7 @@ header h1 {
 }
 
 .container p {
-    font-family: "open sans", sans-serif; /* Custom Font */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular'; /* Custom Font */
     font-size: 18px; /* Adjust the size */
     font-weight: 400;
     color: #333; /* Dark text */
@@ -52,21 +62,11 @@ header h1 {
 .container {
     padding: 20px;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-/* Section Styling welcome part*/
-section {
-    margin: 20px auto;
-    width: 100%;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(10, 8, 8, 0.472);
-}
 
-/* styling of header and para ends here */
 
 /* the styling for aboutus starts here */
 .aboutus h2 {
@@ -79,7 +79,7 @@ section {
 }
 
 .aboutus p {
-    font-family: "open sans", sans-serif; /* Custom Font */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular'; /* Custom Font */
     font-size: 18px; /* Adjust the size */
     font-weight: 400;
     color: #333; /* Dark text */
@@ -342,11 +342,11 @@ button:hover {
 /* Features Section */
 .features {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     background: #cbcac8;
-    padding: 40px 20px;
+    padding: 20px 15px ;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
